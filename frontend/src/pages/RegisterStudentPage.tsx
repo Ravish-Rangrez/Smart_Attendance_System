@@ -7,8 +7,8 @@ import { useToast } from '../context/ToastContext';
 export const RegisterStudentPage: React.FC = () => {
   const [studentId, setStudentId] = useState('');
   const [name, setName] = useState('');
-  const [department, setDepartment] = useState('Computer Engineering');
-  const [className, setClassName] = useState('B.Tech A');
+  const [department, setDepartment] = useState('Computer Science');
+  const [className, setClassName] = useState('BSc A');
   const [isLoading, setIsLoading] = useState(false);
   const { success, error } = useToast();
   const navigate = useNavigate();
