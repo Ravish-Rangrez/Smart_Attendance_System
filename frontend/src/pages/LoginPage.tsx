@@ -13,11 +13,6 @@ export const LoginPage: React.FC = () => {
   const { success, error } = useToast();
   const navigate = useNavigate();
 
-  const handleFillDemo = () => {
-    setEmail('admin@smartattendance.com');
-    setPassword('admin123');
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !password) {
@@ -97,21 +92,6 @@ export const LoginPage: React.FC = () => {
               <p className="text-sm text-slate-500 mt-1">
                 Enter your administrative credentials to manage attendance.
               </p>
-            </div>
-
-            {/* One Click Demo Credentials Card */}
-            <div className="mb-6 p-4 rounded-2xl bg-blue-50/70 border border-blue-100 flex items-center justify-between">
-              <div>
-                <p className="text-xs font-bold text-blue-900">Demo Admin Credentials</p>
-                <p className="text-xs text-blue-600 font-mono mt-0.5">admin@smartattendance.com / admin123</p>
-              </div>
-              <button
-                type="button"
-                onClick={handleFillDemo}
-                className="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold transition-colors shadow-sm"
-              >
-                Auto Fill
-              </button>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
