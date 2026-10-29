@@ -91,7 +91,7 @@ export const RegisterStudentPage: React.FC = () => {
               <input
                 type="text"
                 required
-                placeholder="e.g. Saqib Rangrez"
+                placeholder="e.g. Ravish Rangrez"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm placeholder:text-slate-400 subtle-ring"
@@ -111,7 +111,7 @@ export const RegisterStudentPage: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. Computer Engineering"
+                  placeholder="e.g. Computer Science"
                   value={department}
                   onChange={(e) => setDepartment(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm placeholder:text-slate-400 subtle-ring"
@@ -130,7 +130,7 @@ export const RegisterStudentPage: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="e.g. B.Tech A"
+                  placeholder="e.g. B.Sc" 
                   value={className}
                   onChange={(e) => setClassName(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm placeholder:text-slate-400 subtle-ring"
